@@ -80,7 +80,7 @@ body {
   justify-content: space-around;
 }
 .footer {
-  background-color: grey;
+  background-color: rgba(14, 13, 13, 0.863);
 }
 .footer-flex-item {
   min-width: 300px;
