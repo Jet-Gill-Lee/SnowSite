@@ -73,7 +73,6 @@ body {
   width:45%;
   font-size: 3rem;
   display:none;
-  color:white;
 }
 .hero-text.active {
   display: block;
@@ -201,10 +200,7 @@ body {
   }
   .hero-text {
     position: relative;
-    top: 5px;
-    font-size: 4vh;
-    margin-right: 0;
-    color:white;
+    top: 0px;
   }
 }
 @media (max-width: 400px) {

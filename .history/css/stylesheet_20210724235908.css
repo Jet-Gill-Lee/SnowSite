@@ -73,7 +73,6 @@ body {
   width:45%;
   font-size: 3rem;
   display:none;
-  color:white;
 }
 .hero-text.active {
   display: block;
@@ -87,28 +86,7 @@ body {
 
 #main-work-div {
   display:flex;
-  flex-direction: column;
-  align-items: center;
-}
-.work-option {
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
-
-}
-.work-option-name {
-  width:200px;
-}
-.work-option-pros {
-  width: 200px;
-}
-.work-option-cons {
-  width: 200px;
-}
-#main-work-div h2 {
-  text-align: center;
-  align-self: flex-start;
-
+  justify-content: center;
 }
 
 /* FOOTER */
@@ -198,13 +176,6 @@ body {
   }
   .footer-flex-item.contact {
     order: 3;
-  }
-  .hero-text {
-    position: relative;
-    top: 5px;
-    font-size: 4vh;
-    margin-right: 0;
-    color:white;
   }
 }
 @media (max-width: 400px) {

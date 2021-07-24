@@ -1,0 +1,114 @@
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: grey;
+}
+.form-container {
+  width: 75%;
+  min-width: 380px;
+  min-height: 20vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  color: white;
+  text-align: center;
+}
+
+#addNewJob {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+#error {
+  color: white;
+
+}
+.form-box {
+  padding: 10px;
+}
+#btn {
+  
+  margin: auto;
+}
+#job-listings {
+  display:flex;
+  width:75%;
+  min-width: 380px;
+  background-color: black;
+  color: white;
+  margin:auto;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: center;
+  min-width: 380px;
+
+}
+.job-box {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  margin: none;
+  flex-wrap: wrap;
+}
+.job-box-column {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid white;
+  flex: 2;
+  text-align: center;
+  padding: 10px;
+}
+.job-box-title {
+  flex: 1;
+}
+.job-box-title h4 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.job-box-content{
+  min-width: 300px;
+}
+.job-box-content h5 {
+  margin-top: 4%;
+}
+
+
+#btn2 {
+ width: 250px;
+ height: 20px;
+ display:block;
+ margin:auto;
+}
+.section-header{
+  width:75%;
+  background-color: black;
+  color: white;
+  margin:auto;
+  padding: 25px;
+  text-align: center;
+  padding-top: 20px;
+  min-width: 380px;
+  margin-top: 5px;
+
+}
+.section-header h3{
+  padding-top: 0px;
+  margin:0;
+}
+#button-back{
+  width:75%;
+  background-color: black;
+  margin:auto;
+  padding-bottom: 25px;
+  min-width: 380px;
+
+}

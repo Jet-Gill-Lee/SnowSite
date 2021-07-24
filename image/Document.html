@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)http://127.0.0.1:5500/DOM-manipulation/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./Document_files/script.js" defer=""></script>
+<style>
+   * {
+    box-sizing: border-box;
+  }
+  .document {
+    border: none;
+  }
+  body {
+    border: none;
+    margin: 0;
+  }
+  div {
+    border: 7px solid black;
+
+  }
+  .grandparent {
+    display:flex;
+    height: 60vh;
+    width: 100%;
+    background-color: red;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .parent {
+    display:flex;
+    width:80%;
+    height: 35%;
+    background-color: green;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+  .child {
+    display:flex;
+    background-color: blue;
+    height: 50%;
+    flex: 1;
+    margin: 5%;
+  }
+ 
+  .aunty {
+    display:flex;
+    background-color: brown;
+    height: 50%;
+    flex: 1;
+    margin: 5%;
+
+  }
+ 
+</style><script id="mew-web3script" type="application/javascript" async="false" src="chrome-extension://nlbmnnijcnlegkjjpcfjclmcfggfefdm/js/cxWeb3.js"></script><script type="application/javascript" async="false" id="mew-extensionId">(function(t){window.extensionID=t})("nlbmnnijcnlegkjjpcfjclmcfggfefdm")</script></head>
+
+<body>
+  <div class="grandparent" id="grandparent-id" style="background-color: rgb(51, 51, 51);">
+    <div class="parent parent1">
+      <div class="aunty"></div>
+      <div class="aunty"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
+    <div class="parent parent2" style="background-color: rgb(51, 51, 51);">
+      <div class="child"></div>
+      <div class="child"></div>
+    </div>
+  </div>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>

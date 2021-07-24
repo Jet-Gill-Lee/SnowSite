@@ -7,7 +7,7 @@ toggleButton.addEventListener('click', () => {
 
 
 const brodieButton = document.getElementById('brodie-button');
-const brodieBitch = document.getElementsByClassName('hero-text')[0]
+const brodieBitch = document.getElementById('hero-text')
 brodieButton.addEventListener('click', () => {
   brodieBitch.classList.toggle('active')
-});
+})
